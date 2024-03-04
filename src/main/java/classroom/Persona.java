@@ -27,7 +27,6 @@ public class Persona {
     }
 
     public Persona(String nombre) {
-        this(0L); // Aquí inicializamos cedula con un valor por defecto (0L)
         this.nombre = nombre;
         totalPersonas++;
     }
