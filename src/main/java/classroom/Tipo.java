@@ -1,3 +1,5 @@
+package classroom;
+
 public enum Tipo {
     DISCIPLINAR(10, "Disciplinar"),
     FUNDAMENTACION(20, "Fundamentación"),
