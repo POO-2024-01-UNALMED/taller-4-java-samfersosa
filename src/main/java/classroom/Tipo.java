@@ -12,4 +12,7 @@ public enum Tipo {
         this.codigo = codigo;
         this.nombre = nombre;
     }
+    public String toString() {
+        return "Tipo: " + descripcion + " (Código: " + codigo + ")"; // Usando el campo codigo en el método toString()
+    }
 }

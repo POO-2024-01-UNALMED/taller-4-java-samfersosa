@@ -1,58 +1,29 @@
 package classroom;
 
 public class Asignatura {
-
     public String nombre;
-    public int codigoInterno;
-    public int codigoExterno;
     public Tipo tipo;
+    public int codigoExterno;
 
     public Asignatura() {
         this("Sin nombre", Tipo.FUNDAMENTACION);
     }
 
-    public Asignatura(int codigoInterno, Tipo tipo) {
-        this("Sin nombre", codigoInterno, 0, tipo);
-    }
-
     public Asignatura(String nombre, Tipo tipo) {
-        this(nombre, 0, 0, tipo);
+        this(nombre, tipo, 0);
     }
 
-    public Asignatura(String nombre, int codigoInterno, int codigoExterno, Tipo tipo) {
-        this.nombre = nombre;
-        this.codigoInterno = codigoInterno;
-        this.codigoExterno = codigoExterno;
-        this.tipo = tipo;
+    public Asignatura(int codigoExterno, Tipo tipo) {
+        this("Sin nombre", tipo, codigoExterno);
     }
 
-    public void cambiarDatos(int codigoInterno, int codigoExterno, String nombre, Tipo tipo) {
-        this.codigoInterno = codigoInterno;
-        this.codigoExterno = codigoExterno;
+    public Asignatura(String nombre, Tipo tipo, int codigoExterno) {
         this.nombre = nombre;
         this.tipo = tipo;
+        this.codigoExterno = codigoExterno;
     }
 
-
-    public void cambiarDatos(int nuevoCodigoInterno) {
-        this.codigoInterno = nuevoCodigoInterno;
-    }
-
-
-
-    public void cambiarNombre(String nuevoNombre) {
-        this.nombre = nuevoNombre;
-    }
-
-    public void cambiarDatos(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setCodigoInterno(int codigoInterno) {
-        this.codigoInterno = codigoInterno;
-    }
-
-    public void setCodigoInterno(double codigoInterno) {
-        this.codigoInterno = (int) codigoInterno;
+    public void cambiarDatos(int codigoExterno) {
+        this.codigoExterno = codigoExterno;
     }
 }
