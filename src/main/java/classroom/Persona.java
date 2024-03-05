@@ -9,6 +9,16 @@ public class Persona {
         this.nombre = nombre;
     }
 
+    public Persona() {
+        this.cedula = 0L;
+        this.nombre = "";
+    }
+
+    public Persona(String nombre, long cedula) {
+        this.cedula = cedula;
+        this.nombre = nombre;
+    }
+
     public long getCedula() {
         return cedula;
     }
