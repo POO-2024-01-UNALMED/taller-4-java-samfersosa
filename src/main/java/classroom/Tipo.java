@@ -1,9 +1,7 @@
 package classroom;
 
 public enum Tipo {
-    FUNDAMENTACION(20, "Fundamentación"),
-    DISCIPLINAR(21, "Disciplinar"),
-    ELECTIVA(22, "Electiva");
+    FUNDAMENTACION(20, "Fundamentación");
 
     private final int codigo;
     private final String descripcion;
@@ -11,10 +9,6 @@ public enum Tipo {
     Tipo(int codigo, String descripcion) {
         this.codigo = codigo;
         this.descripcion = descripcion;
-    }
-
-    public int getCodigo() {
-        return codigo;
     }
 
     @Override
