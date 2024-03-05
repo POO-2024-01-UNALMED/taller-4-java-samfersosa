@@ -1,18 +1,18 @@
 package classroom;
 
 public enum Tipo {
-    FUNDAMENTACION(20, "Fundamentación");
-
-    private final int codigo;
-    private final String descripcion;
-
-    Tipo(int codigo, String descripcion) {
-        this.codigo = codigo;
-        this.descripcion = descripcion;
-    }
-
-    @Override
-    public String toString() {
-        return "Tipo: " + descripcion + " (Código: " + codigo + ")";
-    }
+	DISCIPLINAR(10,"Disciplinar"),FUNDAMENTACION(20,"Fundamentacion"),ELECTIVA(30,"Electiva");
+	
+	private int codigo;
+	private String nombre;
+	private Tipo(int codigo,String nombre) {
+		this.codigo = codigo;
+		this.nombre = nombre;
+	}
+	public int getCodigo() {
+		return codigo;
+	}
+	public String getNombre() {
+		return nombre;
+	}
 }
